@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
-    <title>JavaRush Prototype</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>JavaRush</title>
 </head>
 <body>
 
@@ -18,7 +19,7 @@
         <li><a href="#">Отзывы</a></li>
         <li><a href="#">О нас</a></li>
         <li><a href="#">C50</a></li>
-        <li><a class="btn-start" href="#">Начать обучение</a></li>
+        <li><a class="btn-start" href="/welcome">Начать обучение</a></li>
     </ul>
 </nav>
 
@@ -68,67 +69,50 @@
 
 <!-- Main Content -->
 <main>
-    <h2>Available Courses</h2>
 
-    <div class="course">
-        <h3>Java Syntax</h3>
-        <div class="course-description">
-            <p>Learn the basics of Java programming, including syntax, loops, conditions, and more.</p>
-        </div>
-        <div class="course-action">
-            <button>Start Course</button>
+    <div class="course-map">
+        <h1>Карта квестов</h1>
+        <div class="course-cards">
+            <div class="course-card">
+                <img src="path/to/your/image1.png" alt="Java Syntax" class="course-image">
+                <h2>Модуль 1. Java Syntax</h2>
+                <p>Модуль Java Syntax — введение в программирование на Java. Вы узнаете, что такое классы, объекты, методы и т.д.</p>
+                <button class="status-button">НЕДОСТУПЕН</button>
+            </div>
+            <div class="course-card">
+                <img src="path/to/your/image2.png" alt="Java Core" class="course-image">
+                <h2>Модуль 2. Java Core</h2>
+                <p>Модуль “Java Core” — для тех студентов, которые получили минимальную подготовку по Java.</p>
+                <button class="status-button">НЕДОСТУПЕН</button>
+            </div>
+            <div class="course-card">
+                <img src="path/to/your/image3.png" alt="Java Professional" class="course-image">
+                <h2>Модуль 3. Java Professional</h2>
+                <p>Модуль “Java Professional” познакомит вас с главными концепциями и инструментами разработки.</p>
+                <button class="status-button">НЕДОСТУПЕН</button>
+            </div>
+            <div class="course-card">
+                <img src="path/to/your/image4.png" alt="Работа с БД" class="course-image">
+                <h2>Модуль 4. Работа с БД</h2>
+                <p>Здесь вы научитесь работать с базами данных.</p>
+                <button class="status-button">ДОСТУПЕН</button>
+            </div>
+            <div class="course-card">
+                <img src="path/to/your/image5.png" alt="Spring" class="course-image">
+                <h2>Модуль 5. Spring</h2>
+                <p>Изучите фреймворк Spring и его применение в Java-разработке.</p>
+                <button class="status-button">НЕДОСТУПЕН</button>
+            </div>
+            <div class="course-card">
+                <img src="path/to/your/image6.png" alt="Карьерный центр" class="course-image">
+                <h2>Модуль 6. Карьерный центр</h2>
+                <p>Подготовьтесь к карьерному росту и трудоустройству.</p>
+                <button class="status-button">ДОСТУПЕН</button>
+            </div>
         </div>
     </div>
 
-    <div class="course">
-        <h3>Java Core</h3>
-        <div class="course-description">
-            <p>Dive deeper into Java with object-oriented programming, collections, and error handling.</p>
-        </div>
-        <div class="course-action">
-            <button>Start Course</button>
-        </div>
-    </div>
 
-    <div class="course">
-        <h3>Java Professional</h3>
-        <div class="course-description">
-            <p>Master advanced Java topics such as concurrency, JVM internals, and more.</p>
-        </div>
-        <div class="course-action">
-            <button>Start Course</button>
-        </div>
-    </div>
-
-    <div class="course">
-        <h3>Working with Databases</h3>
-        <div class="course-description">
-            <p>Learn how to interact with databases using SQL and integrate them with Java applications.</p>
-        </div>
-        <div class="course-action">
-            <button>Start Course</button>
-        </div>
-    </div>
-
-    <div class="course">
-        <h3>Spring Framework</h3>
-        <div class="course-description">
-            <p>Build robust web applications using the Spring Framework, including Spring Boot.</p>
-        </div>
-        <div class="course-action">
-            <button>Start Course</button>
-        </div>
-    </div>
-
-    <div class="course">
-        <h3>Career Center</h3>
-        <div class="course-description">
-            <p>Prepare for your career with interview tips, resume building, and more.</p>
-        </div>
-        <div class="course-action">
-            <button>Start Course</button>
-        </div>
-    </div>
 </main>
 
 <!-- Footer -->

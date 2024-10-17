@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0A1540;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1200px;
+    padding: 20px;
+    width: 80%;
+    gap: 20px;
+}
+
+.content {
+    flex-basis: 45%;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.start-btn, .account-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.start-btn {
+    background-color: #FFC83D;
+    color: black;
+    margin-right: 20px;
+}
+
+.account-btn {
+    background-color: transparent;
+    border: 2px solid #5562A7;
+    color: #5562A7;
+}
+
+/* Hover effects */
+.start-btn:hover {
+    background-color: #ffb300;
+    transform: scale(1.05);
+}
+
+.account-btn:hover {
+    background-color: #5562A7;
+    color: white;
+    transform: scale(1.05);
+}
+
+.laptop-image {
+    max-width: 600px;
+}
+
+.image-section {
+    flex-basis: 45%;
+    margin-left: 0;
+}

@@ -82,55 +82,74 @@ body {
     background-color: #ff5722;
 }
 
-
 /* Main content styles */
 main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 180px);
+    margin-left: 200px;
+
 }
-
-
-.course-map {
+.auth-container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin: 20px;
+    color: #003366;
 }
 
-.course-cards {
+.auth-form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.course-card {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    width: 300px;
-    margin: 10px;
-    padding: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.course-image {
+    flex-direction: column;
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    max-width: 400px;
+    font-size: 20px;
 }
 
-.status-button {
-    background-color: red;
+.auth-form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.auth-form button {
+    padding: 10px;
+    background-color: #ffcc00;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px;
     cursor: pointer;
-    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.2s; /* Плавный переход */
+
 }
 
-.status-button:hover {
-    opacity: 0.8;
+.auth-form button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+.auth-form input::placeholder {
+    color: #003366;
+}
+
+
+.social-auth {
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 30px;
+    margin: 0 15px; /* Увеличенное расстояние между иконками */
 }
 
 footer {
