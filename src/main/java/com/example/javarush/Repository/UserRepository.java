@@ -3,8 +3,8 @@ package com.example.javarush.Repository;
 import com.example.javarush.Entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends JpaRepository<User, Integer> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
-    public User findByEmail(String email);
+    User findByEmail(String email);
 
 }

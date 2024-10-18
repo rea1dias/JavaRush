@@ -3,6 +3,7 @@ package com.example.javarush.Entity;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "users")
@@ -22,15 +23,15 @@ public class User {
     private String password;
 
     @Column(name = "created_at")
-    private LocalDate createdAt;
+    private LocalDateTime createdAt;
 
     public User() {}
 
-    public User(String username, String email, String password, LocalDate createdAt) {
+    public User(String username, String email, String password, LocalDateTime createdAt) {
         this.username = username;
         this.email = email;
         this.password = password;
-        this.createdAt = LocalDate.now();
+        this.createdAt = createdAt;
     }
 
     public Long getId() {
@@ -65,11 +66,11 @@ public class User {
         this.password = password;
     }
 
-    public LocalDate getCreatedAt() {
+    public LocalDateTime getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(LocalDate createdAt) {
+    public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
 }

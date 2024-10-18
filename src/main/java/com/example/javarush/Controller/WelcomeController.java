@@ -19,7 +19,6 @@ public class WelcomeController {
         return "users/register";
     }
 
-    // @PostMapping("/last-step")
 
 
 }

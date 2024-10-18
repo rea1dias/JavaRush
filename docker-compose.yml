@@ -1,0 +1,30 @@
+version: '3.8'
+
+volumes:
+  javarush:
+
+services:
+  javarush:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_APPLICATION_NAME: JavaRush
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/javarushdb
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: Shakpakbaba.2003
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.PostgreSQLDialect
+    depends_on:
+      - db
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: javarushdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Shakpakbaba.2003
+    ports:
+      - "5432:5432"

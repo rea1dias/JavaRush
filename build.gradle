@@ -13,6 +13,11 @@ java {
     }
 }
 
+jar {
+    archiveFileName = 'java-rush.jar'
+}
+
+
 repositories {
     mavenCentral()
 }
@@ -26,12 +31,10 @@ dependencies {
     runtimeOnly 'org.postgresql:postgresql'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-  /*  implementation group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '3.3.4' */
-  /*  implementation group: 'org.springframework.security', name: 'spring-security-config', version: '6.3.3' */
-  /*  implementation group: 'org.springframework.security', name: 'spring-security-web', version: '6.3.3' */
+   /* implementation group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '3.3.4' */
+   /* implementation group: 'org.springframework.security', name: 'spring-security-config', version: '6.3.3' */
+   /* implementation group: 'org.springframework.security', name: 'spring-security-web', version: '6.3.3' */
     compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.34'
-
-
 
 }
 
