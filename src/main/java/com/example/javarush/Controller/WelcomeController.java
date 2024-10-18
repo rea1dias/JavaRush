@@ -18,6 +18,11 @@ public class WelcomeController {
         return "users/register";
     }
 
+    @GetMapping("/home")
+    public String home() {
+        return null;
+    }
+
 
 
 }
