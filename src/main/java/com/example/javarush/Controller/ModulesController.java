@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping
 public class ModulesController {
 
-    @Autowired
-    private ModulesService modulesService;
 
 
 }

@@ -9,10 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/course")
 public class CourseController {
 
-    @Autowired
-    private CourseService courseService;
-
-
 
 
 
