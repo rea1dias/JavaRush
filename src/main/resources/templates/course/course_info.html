@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/login.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/course_info.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>JavaRush Prototype</title>
+  <title>JavaRush</title>
 </head>
 <body>
 
@@ -70,25 +69,60 @@
 
 <!-- Main Content -->
 <main>
-  <div class="auth-container">
-    <h1>Авторизация</h1>
-    <form class="auth-form">
-      <input type="email" placeholder="Электронная почта" required>
-      <input type="password" placeholder="Пароль" required>
-      <button type="submit">Войти</button>
-    </form>
-    <div class="social-auth">
-      <p>Авторизуйтесь через:</p>
-      <div class="social-icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-google"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-vk"></i>
+    <!-- Course Header -->
+    <section class="course-intro">
+      <h1>Получи профессию «Java-разработчик»</h1>
+      <p>Обучайся с ментором, освой разработку на Java — от основ до технологий, которые нужны для сильного резюме, и создай 10 крутых проектов для своего портфолио.</p>
+      <a href="/course/signup" class="btn-start-course">Записаться на курс</a>
+    </section>
+
+    <!-- Course Details -->
+    <section class="course-details">
+      <div class="details-list">
+        <span>Старт новой группы – 4 ноября</span>
+        <span>12 месяцев</span>
+        <span>Практика с первого занятия</span>
+        <span>Помощь со стартом карьеры</span>
+        <span>5 модулей</span>
+        <span>10 крутых проектов в портфолио</span>
       </div>
-    </div>
-  </div>
+    </section>
+
+    <!-- Code Section and Chat -->
+    <section class="code-demo">
+      <div class="code-box">
+        <div class="code-header">
+          <span>Solution.java</span>
+        </div>
+        <pre class="code-snippet">
+<code>
+package com.javarush.task.task01;
+
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println("Я буду Java-программистом");
+    }
+}
+</code>
+            </pre>
+      </div>
+
+      <div class="chat-box">
+        <div class="mentor-chat">
+          <img src="../images/andrey.png" alt="Mentor" class="mentor-img">
+          <div class="chat">
+            <p>Привет, Андрей, какой метод нужно использовать здесь?</p>
+          </div>
+        </div>
+
+        <div class="student-chat">
+          <img src="../images/kristina.png" alt="Student" class="student-img">
+          <div class="chat">
+            <p>Привет, Кристина!</p>
+          </div>
+        </div>
+      </div>
+    </section>
 </main>
 
 <!-- Footer -->
@@ -98,3 +132,4 @@
 
 </body>
 </html>
+

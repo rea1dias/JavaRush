@@ -82,56 +82,154 @@ body {
     background-color: #ff5722;
 }
 
-
-/* Main content styles */
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+/* Main Content Styling */
+.course-intro {
+    margin-left: 330px; /* To avoid overlap with sidebar */
+    padding: 40px;
 }
 
-
-.course-map {
-    text-align: center;
-    margin: 20px;
-}
-
-.course-cards {
+.top-navigation ul {
+    list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin-left: 250px;
+    gap: 10px;
 }
 
-.course-card {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    width: 300px;
-    margin: 10px;
-    padding: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
+.top-navigation ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
 }
 
-.course-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.status-button {
-    background-color: red;
-    color: white;
-    border: none;
+.top-navigation ul li a:hover {
+    background-color: #3a3a3a;
     border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
+    color: white;
+}
+
+.top-navigation .btn-learn {
+    margin-left: auto;
+    background-color: #61d16a;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.intro-text h2 {
+    color: #61d16a;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.intro-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.ratings {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
     font-weight: bold;
 }
 
-.status-button:hover {
-    opacity: 0.8;
+.ratings span {
+    background-color: #3a3a3a;
+    padding: 10px 20px;
+    border-radius: 20px;
 }
+
+.btn-action {
+    background-color: #61d16a;
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-action:hover {
+    background-color: #4fbf56;
+}
+
+.code-section {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.code-header ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.code-header ul li {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.code-header ul li:hover {
+    background-color: #444;
+}
+
+.code-box {
+    background-color: #111;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #61d16a;
+}
+
+.code-box pre {
+    white-space: pre-wrap;
+}
+
+.code-file {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.task-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-info ul li {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
 
 footer {
     background-color: #2c3e50;

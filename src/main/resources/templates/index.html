@@ -29,8 +29,8 @@
     <div class="sidebar-section">
         <h3>Акция</h3>
         <ul>
-            <li><a href="#">Университет</a></li>
-            <li><a href="#">Java курс</a></li>
+            <li><a href="/">Университет</a></li>
+            <li><a href="/course/info">Java курс</a></li>
             <li><a href="#">Python курс</a></li>
             <li><a href="#">Frontend курс</a></li>
         </ul>
@@ -68,51 +68,69 @@
 </aside>
 
 <!-- Main Content -->
-<main>
+<main class="course-intro">
+    <nav class="top-navigation">
+        <ul>
+            <li><a href="#">О курсе</a></li>
+            <li><a href="#">Особенности</a></li>
+            <li><a href="#">Формат обучения</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Наши выпускники</a></li>
+        </ul>
+        <a href="#" class="btn-learn">Начать обучение</a>
+    </nav>
 
-    <div class="course-map">
-        <h1>Карта квестов</h1>
-        <div class="course-cards">
-            <div class="course-card">
-                <img src="path/to/your/image1.png" alt="Java Syntax" class="course-image">
-                <h2>Модуль 1. Java Syntax</h2>
-                <p>Модуль Java Syntax — введение в программирование на Java. Вы узнаете, что такое классы, объекты, методы и т.д.</p>
-                <button class="status-button">НЕДОСТУПЕН</button>
+    <section class="intro-content">
+        <div class="intro-text">
+            <h2>КУРСЫ JAVA ОНЛАЙН</h2>
+            <h1>Здесь ты станешь программистом</h1>
+            <p>Ты научишься программировать. Не важно, сколько тебе лет и какой у тебя багаж знаний. Программирование, как и езда на велосипеде — это навык; поэтому важна практика. Считай, что курсы Java разработки от JavaRush — это твой "велотренажер". Тренируйся писать код на Java онлайн: в своем темпе, с практикой с первых уроков. Кодить — не страшно! Просто начни.</p>
+            <div class="ratings">
+                <span>4.9 ★★★★★</span>
+                <span>30K+ трудоустроенных выпускников</span>
             </div>
-            <div class="course-card">
-                <img src="path/to/your/image2.png" alt="Java Core" class="course-image">
-                <h2>Модуль 2. Java Core</h2>
-                <p>Модуль “Java Core” — для тех студентов, которые получили минимальную подготовку по Java.</p>
-                <button class="status-button">НЕДОСТУПЕН</button>
+            <a href="#" class="btn-action">Я в деле — начнем!</a>
+        </div>
+
+        <div class="code-section">
+            <div class="code-header">
+                <ul>
+                    <li>Проверка</li>
+                    <li>Помощь</li>
+                    <li>Обсуждение</li>
+                    <li>Запуск</li>
+                    <li>Анализ кода</li>
+                </ul>
             </div>
-            <div class="course-card">
-                <img src="path/to/your/image3.png" alt="Java Professional" class="course-image">
-                <h2>Модуль 3. Java Professional</h2>
-                <p>Модуль “Java Professional” познакомит вас с главными концепциями и инструментами разработки.</p>
-                <button class="status-button">НЕДОСТУПЕН</button>
+            <div class="code-box">
+                <div class="code-file">
+                    <span>Solution.java</span>
+                </div>
+                <pre>
+                    <code>
+package com.codegym.task.task01.task0101;
+
+/*
+Я буду Java-программистом
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println("Я буду Java-программистом");
+    }
+}
+                    </code>
+                </pre>
             </div>
-            <div class="course-card">
-                <img src="path/to/your/image4.png" alt="Работа с БД" class="course-image">
-                <h2>Модуль 4. Работа с БД</h2>
-                <p>Здесь вы научитесь работать с базами данных.</p>
-                <button class="status-button">ДОСТУПЕН</button>
-            </div>
-            <div class="course-card">
-                <img src="path/to/your/image5.png" alt="Spring" class="course-image">
-                <h2>Модуль 5. Spring</h2>
-                <p>Изучите фреймворк Spring и его применение в Java-разработке.</p>
-                <button class="status-button">НЕДОСТУПЕН</button>
-            </div>
-            <div class="course-card">
-                <img src="path/to/your/image6.png" alt="Карьерный центр" class="course-image">
-                <h2>Модуль 6. Карьерный центр</h2>
-                <p>Подготовьтесь к карьерному росту и трудоустройству.</p>
-                <button class="status-button">ДОСТУПЕН</button>
+            <div class="task-info">
+                <ul>
+                    <li>Программа должна выводить текст</li>
+                    <li>Текст должен состоять из одной строки</li>
+                    <li>Выводимый текст должен соответствовать заданию</li>
+                </ul>
             </div>
         </div>
-    </div>
-
-
+    </section>
 </main>
 
 <!-- Footer -->

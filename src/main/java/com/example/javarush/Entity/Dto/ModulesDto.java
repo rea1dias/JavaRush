@@ -1,15 +1,11 @@
 package com.example.javarush.Entity.Dto;
 
-import com.example.javarush.Entity.Modules;
-
-import java.util.List;
-
-public class CourseDto {
+public class ModulesDto {
 
     private Long id;
     private String name;
     private String description;
-    private List<ModulesDto> modules;
+    private Long course_id;
 
     public Long getId() {
         return id;
@@ -35,11 +31,11 @@ public class CourseDto {
         this.description = description;
     }
 
-    public List<ModulesDto> getModules() {
-        return modules;
+    public Long getCourse_id() {
+        return course_id;
     }
 
-    public void setModules(List<ModulesDto> modules) {
-        this.modules = modules;
+    public void setCourse_id(Long course_id) {
+        this.course_id = course_id;
     }
 }

@@ -3,9 +3,6 @@ package com.example.javarush.Entity;
 import com.example.javarush.Entity.Dto.Role;
 import jakarta.persistence.*;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-
 @Entity
 @Table(name = "users")
 public class User {
